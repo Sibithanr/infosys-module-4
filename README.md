@@ -59,9 +59,9 @@ Create & activate a virtual environment:
 bash
 Copy code
 python -m venv venv
-# Windows
+#### Windows
 venv\Scripts\activate
-# macOS/Linux
+#### macOS/Linux
 source venv/bin/activate
 Install dependencies:
 
@@ -74,6 +74,11 @@ bash
 Copy code
 python -m streamlit run Module4_Strategic_Intelligence_Dashboard.py
 Open http://localhost:8501 in your browser.
+
+
+
+---
+
 
 
 ### 📊 Data Format
@@ -92,6 +97,10 @@ Sentiment scores are automatically interpolated if missing.
 
 
 
+---
+
+
+
 ### 🔄 Features in Action
 
 
@@ -104,6 +113,12 @@ Forecasting: 30-day prediction of mentions & sentiment per competitor.
 Alerts Table: Automatic detection of negative sentiment or spikes in mentions.
 
 Downloadable Data: Export filtered datasets and alerts as CSV.
+
+
+
+
+---
+
 
 
 
@@ -120,6 +135,10 @@ Check rolling averages, cumulative mentions, and heatmaps display as expected.
 
 
 
+---
+
+
+
 
 ### 🎨 Customization
 
@@ -132,9 +151,20 @@ Modify chart styles in Module4_Strategic_Intelligence_Dashboard.py using Matplot
 
 
 
+
+---
+
+
+
+
 ### 📝 License
 
 MIT License. See LICENSE file for details.
+
+
+
+
+---
 
 
 
