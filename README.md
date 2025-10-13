@@ -75,7 +75,9 @@ Copy code
 python -m streamlit run Module4_Strategic_Intelligence_Dashboard.py
 Open http://localhost:8501 in your browser.
 
-📊 Data Format
+
+### 📊 Data Format
+
 Competitor CSV
 bash
 Copy code
@@ -88,7 +90,11 @@ date,competitor,keyword,count
 2025-01-01,AlphaCorp,AI,25
 Sentiment scores are automatically interpolated if missing.
 
-🔄 Features in Action
+
+
+### 🔄 Features in Action
+
+
 KPIs: Total competitors, average sentiment, total mentions, alerts.
 
 Charts: Line plots, heatmaps, pie charts, rolling averages, cumulative mentions.
@@ -99,7 +105,11 @@ Alerts Table: Automatic detection of negative sentiment or spikes in mentions.
 
 Downloadable Data: Export filtered datasets and alerts as CSV.
 
-🧪 Testing
+
+
+### 🧪 Testing
+
+
 Verify sidebar filters and date ranges work correctly.
 
 Confirm charts and forecasts render correctly for each competitor.
@@ -108,15 +118,25 @@ Test alerts generation and CSV download functionality.
 
 Check rolling averages, cumulative mentions, and heatmaps display as expected.
 
-🎨 Customization
+
+
+
+### 🎨 Customization
+
+
 Add new competitors or sectors by updating the CSV files.
 
 Extend forecasting for new metrics via forecasting.py.
 
 Modify chart styles in Module4_Strategic_Intelligence_Dashboard.py using Matplotlib or Seaborn.
 
-📝 License
+
+
+### 📝 License
+
 MIT License. See LICENSE file for details.
+
+
 
 🤝 Author
 Sibitha Namakkal Ravikumar
