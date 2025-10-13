@@ -1,45 +1,69 @@
 # Real-Time Industry Insight & Strategic Intelligence System
 
 ## Overview
-The **Real-Time Industry Insight & Strategic Intelligence System** is an interactive dashboard built using **Python** and **Streamlit** that provides actionable insights into competitor performance, sentiment trends, and keyword dynamics across multiple sectors. The system also includes forecasting features to predict mentions and sentiment trends, helping businesses make data-driven strategic decisions.
+A comprehensive **interactive dashboard** for tracking, analyzing, and forecasting industry intelligence across multiple technology sectors using competitor, news, and social media data. This system provides actionable insights for strategic decision-making, combining **real-time analytics, forecasting, alerts, and data visualization**.
 
 ---
 
-## Features
-- **Key Metrics (KPIs):** Total competitors, average sentiment, total mentions, and alerts for negative sentiment.  
-- **Competitor Analytics:** Line charts tracking sentiment and mentions over time.  
-- **Keyword Trends:** Trend analysis for selected keywords across competitors.  
-- **Forecasting:** Exponential Smoothing forecasts for competitor mentions and sentiment for the next 30 days.  
-- **Visual Insights:**  
-  - Sentiment distribution by competitor  
-  - Mentions share across competitors  
-  - Heatmaps for competitor vs sector sentiment  
-  - Rolling averages and cumulative mentions  
-  - Keyword share and co-occurrence heatmaps  
-- **Data Download:** Download filtered datasets and alerts in CSV format.  
+## 🚀 Features
+
+### Core Functionality
+- **Domain & Competitor Selection:** Filter by sectors and competitors.
+- **Interactive Dashboard:** KPIs, sentiment trends, mentions, alerts, and keyword analytics.
+- **Forecasting:** Predict sentiment and mentions using **Exponential Smoothing**.
+- **Alerts:** Automated detection of negative sentiment and mention spikes.
+- **Data Export:** Download filtered datasets and alerts as CSV.
+- **Themes:** Toggle between **dark/light modes** for optimal viewing.
+
+### Analytical Insights
+- **Competitor Sentiment Trajectories:** Track sentiment trends over time.
+- **Mentions Analysis:** Historical and cumulative mentions visualization.
+- **Keyword Trends:** Track keyword mentions and co-occurrences.
+- **Heatmaps & Boxplots:** Compare sentiment across competitors and sectors.
+- **Rolling Averages:** Identify trends with 7-day moving averages.
 
 ---
 
-## Tech Stack
-- **Programming Language:** Python  
-- **Libraries & Frameworks:** Streamlit, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels  
-- **Version Control:** Git & GitHub  
+## 🛠️ Technology Stack
+
+### Frontend
+- **Streamlit** for interactive dashboard
+- **Matplotlib & Seaborn** for charts
+- **Interactive Filters & Downloads** using Streamlit widgets
+
+### Backend / Data Processing
+- **Python** with Pandas & NumPy
+- **Statsmodels** for time-series forecasting
+- **Exponential Smoothing** for mentions & sentiment prediction
+- **CSV Parsing** for real-time data ingestion
+
+### Version Control
+- Git & GitHub for source code management
+
 
 ---
 
-## Installation & Setup
+## 🏗️ Installation & Setup
+
+### Prerequisites
+- Python 3.8+  
+- Pip  
+
+### Quick Start
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/RealTime-Industry-Insight.git
-   cd RealTime-Industry-Insight
-Create a virtual environment (optional but recommended):
+bash
+git clone https://github.com/Sibithanr/infosys-module-4
+cd infosys-module-4
+Create & activate a virtual environment:
 
 bash
 Copy code
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-Install required packages:
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+Install dependencies:
 
 bash
 Copy code
@@ -48,21 +72,51 @@ Run the Streamlit app:
 
 bash
 Copy code
-streamlit run app.py
-Usage
-Use the sidebar filters to select competitors, sectors, and date ranges.
+python -m streamlit run Module4_Strategic_Intelligence_Dashboard.py
+Open http://localhost:8501 in your browser.
 
-Explore KPIs and charts for sentiment and mentions insights.
+📊 Data Format
+Competitor CSV
+bash
+Copy code
+date,competitor,sector,sentiment_score,mentions
+2025-01-01,AlphaCorp,AI,0.75,50
+Keyword CSV
+bash
+Copy code
+date,competitor,keyword,count
+2025-01-01,AlphaCorp,AI,25
+Sentiment scores are automatically interpolated if missing.
 
-Select a competitor for forecasting trends.
+🔄 Features in Action
+KPIs: Total competitors, average sentiment, total mentions, alerts.
 
-Download alerts and filtered datasets for further analysis.
+Charts: Line plots, heatmaps, pie charts, rolling averages, cumulative mentions.
 
-Screenshots
-(Optional: Add screenshots of your dashboard here)
+Forecasting: 30-day prediction of mentions & sentiment per competitor.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Alerts Table: Automatic detection of negative sentiment or spikes in mentions.
 
-Author
+Downloadable Data: Export filtered datasets and alerts as CSV.
+
+🧪 Testing
+Verify sidebar filters and date ranges work correctly.
+
+Confirm charts and forecasts render correctly for each competitor.
+
+Test alerts generation and CSV download functionality.
+
+Check rolling averages, cumulative mentions, and heatmaps display as expected.
+
+🎨 Customization
+Add new competitors or sectors by updating the CSV files.
+
+Extend forecasting for new metrics via forecasting.py.
+
+Modify chart styles in Module4_Strategic_Intelligence_Dashboard.py using Matplotlib or Seaborn.
+
+📝 License
+MIT License. See LICENSE file for details.
+
+🤝 Author
 Sibitha Namakkal Ravikumar
